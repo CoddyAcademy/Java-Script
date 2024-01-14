@@ -95,3 +95,8 @@
 // seriesDB.series[c] = d
 // console.log(seriesDB);
 
+// let user = "ulugbbek"
+// let age = 20;
+
+// let result = `My name is ${user}, I'm ${age} years old`
+// console.log(result);
