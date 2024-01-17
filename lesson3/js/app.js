@@ -76,27 +76,28 @@
 
 // console.log(result);
 
-// let numberOfSeries = +prompt("Nechta serial ko'rdingiz");
+let numberOfSeries = +prompt("Nechta serial ko'rdingiz");
 
-// let seriesDB = {
-//     count : numberOfSeries,
-//     series: {},
-//     actors: {},
-//     genres: [],
-//     privat: false,
-// }
+let seriesDB = {
+    count : numberOfSeries,
+    series: {},
+    actors: {},
+    genres: [],
+    privat: false,
+}
 
-// let a = prompt("Oxirgi ko'rgan serialingiz"),
-//     b = prompt("Necha baxo berasiz ?")
-//     c = prompt("Oxirgi ko'rgan serialingiz ?")
-//     d = prompt("Necha baxo berasiz ?")
+let a = prompt("Oxirgi ko'rgan serialingiz"),
+    b = prompt("Necha baxo berasiz ?")
+    c = prompt("Oxirgi ko'rgan serialingiz ?")
+    d = prompt("Necha baxo berasiz ?")
 
-// seriesDB.series[a] = b
-// seriesDB.series[c] = d
-// console.log(seriesDB);
+seriesDB.series[a] = b
+seriesDB.series[c] = d
+console.log(seriesDB);
 
 // let user = "ulugbbek"
 // let age = 20;
 
 // let result = `My name is ${user}, I'm ${age} years old`
 // console.log(result);
+
