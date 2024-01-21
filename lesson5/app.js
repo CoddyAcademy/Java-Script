@@ -59,24 +59,38 @@
 //    private: false
 // }
 
-// for(let i = 0; i <2; i++){
-//    let a = prompt("oxirgi ko'rgan serialingiz"),
-//    b = prompt("Necha baxo berasiz ?");
-
-//    if(a != null && a !="" && b != null && b != ""){
-//       seriesDB.series[a] = b
-//    }else{
-//       i--;
-//    }
- 
+// function addObj(){
+//     for(let i = 0; i <2; i++){
+//         let a = prompt("oxirgi ko'rgan serialingiz"),
+//         b = prompt("Necha baxo berasiz ?");
+     
+//         if(a != null && a !="" && b != null && b != ""){
+//            seriesDB.series[a] = b
+//         }else{
+//            i--;
+//         }
+      
+//      }
 // }
 
-// if(seriesDB.count <5){
-//    console.log("Kam serial ko'ribsiz");
+// function seriesCount(){
+//     if(seriesDB.count <5){
+//         console.log("Kam serial ko'ribsiz");
+//      }
+//      else if(seriesDB.count > 5 && 10> seriesDB.count){
+//         console.log("Siz classiz tomoshabin ekansiz");
+//      }else if(seriesDB.count > 15){
+//         console.log("Siz serialchi zvezda ekansiz");
+//      }
 // }
-// else if(seriesDB.count > 5 && 10> seriesDB.count){
-//    console.log("Siz classiz tomoshabin ekansiz");
-// }else if(seriesDB.count > 15){
-//    console.log("Siz serialchi zvezda ekansiz");
-// }
+
 // console.log(seriesDB);
+
+
+// addObj()
+// seriesCount()
+
+function Obj(a,b){
+    console.log(a+b);
+}
+Obj(12, 12)
