@@ -49,48 +49,55 @@
 
 
 
-// let numberOfSeries = +prompt("Nechta serial ko'rdingiz  ?")
+let numberOfSeries;
 
-// let seriesDB = {
-//    count: numberOfSeries,
-//    series: {},
-//    actors: {},
-//    genres: [],
-//    private: false
-// }
-
-// function addObj(){
-//     for(let i = 0; i <2; i++){
-//         let a = prompt("oxirgi ko'rgan serialingiz"),
-//         b = prompt("Necha baxo berasiz ?");
-     
-//         if(a != null && a !="" && b != null && b != ""){
-//            seriesDB.series[a] = b
-//         }else{
-//            i--;
-//         }
-      
-//      }
-// }
-
-// function seriesCount(){
-//     if(seriesDB.count <5){
-//         console.log("Kam serial ko'ribsiz");
-//      }
-//      else if(seriesDB.count > 5 && 10> seriesDB.count){
-//         console.log("Siz classiz tomoshabin ekansiz");
-//      }else if(seriesDB.count > 15){
-//         console.log("Siz serialchi zvezda ekansiz");
-//      }
-// }
-
-// console.log(seriesDB);
-
-
-// addObj()
-// seriesCount()
-
-function Obj(a,b){
-    console.log(a+b);
+function startApp(){
+    numberOfSeries = +prompt("Nechta serial ko'rdingiz  ?")
+    while(numberOfSeries == null || numberOfSeries == "" || isNaN(numberOfSeries)){
+      numberOfSeries = +prompt("Nechta serial ko'rdingiz  ?")
+    }
 }
-Obj(12, 12)
+startApp()
+
+let seriesDB = {
+   count: numberOfSeries,
+   series: {},
+   actors: {},
+   genres: [],
+   private: false
+}
+
+function addObj(){
+    for(let i = 0; i <2; i++){
+        let a = prompt("oxirgi ko'rgan serialingiz"),
+        b = prompt("Necha baxo berasiz ?");
+     
+        if(a != null && a !="" && b != null && b != ""){
+           seriesDB.series[a] = b
+        }else{
+           i--;
+        }
+     }
+}
+
+function seriesCount(sc){
+    if(sc <5){
+        console.log("Kam serial ko'ribsiz");
+     }
+     else if(sc > 5 && 10> sc){
+        console.log("Siz classiz tomoshabin ekansiz");
+     }else if(sc > 15){
+        console.log("Siz serialchi zvezda ekansiz");
+     }
+}
+addObj()
+seriesCount(seriesDB.count)
+
+function showDB(hidden){
+   if(!hidden){
+      console.log(seriesDB);
+   }
+}
+showDB(seriesDB.private)
+
+
